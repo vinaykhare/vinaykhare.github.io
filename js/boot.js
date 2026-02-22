@@ -15,7 +15,36 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-function openPopupPage(url) {
-  window.open(url, 'popupWindowName', 'width=600,height=400,scrollbars=yes,resizable=yes');
-  return false; // Prevents the default anchor link behavior
-}
+document.addEventListener('DOMContentLoaded', function() {
+    function calculateExperience() {
+        const items = document.querySelectorAll('.timeline-item');
+        
+        items.forEach(item => {
+            const startStr = item.getAttribute('date-start');
+            let endStr = item.getAttribute('date-end');
+            
+            const startDate = new Date(startStr);
+            const endDate = (endStr === 'present') ? new Date() : new Date(endStr);
+            
+            let years = endDate.getFullYear() - startDate.getFullYear();
+            let months = endDate.getMonth() - startDate.getMonth();
+            
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            
+            // Format the string
+            let durationStr = "";
+            if (years > 0) durationStr += years + (years === 1 ? " yr " : " yrs ");
+            if (months > 0) durationStr += months + (months === 1 ? " mo" : " mos");
+            
+            const badge = item.querySelector('.duration-badge');
+            if (badge) {
+                badge.innerText = durationStr || "Less than a month";
+            }
+        });
+    }
+
+    calculateExperience();
+});

@@ -44,13 +44,39 @@ section {
 /* Hero Section */
 #home {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    padding-top: 120px; /* Space for fixed navbar */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     color: var(--dark-color);
+    letter-spacing: -1px;
+}
+
+.fw-600 { font-weight: 600; }
+
+.badge {
+    white-space: normal !important; /* Forces text to wrap */
+    text-align: left;
+    display: flex !important;
+    align-items: flex-start;
+    line-height: 1.5;
+     /* width: auto;Allows it to fit container */
+    max-width: 100%; /* Ensures it stays within card boundaries */
+}
+
+/* Hover effect for the Project Cards */
+.shadow-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
 /* Skills Badges */
@@ -102,9 +128,28 @@ section {
 }
 
 /* Mobile Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    
+    #navbar-main .container {
+        justify-content: space-between;
+    }
+
+    /* Ensure the Resume button stays neat inside the toggle or header */
+    .navbar-nav .btn-primary {
+        margin-top: 15px;
+        width: 100%; /* Full width button on mobile menu for better UX */
+    }
+
+    #home {
+        padding-top: 140px; /* Extra space so text isn't hidden by navbar */
+    }
+
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .badge {
+        font-size: 0.85rem; /* Slightly smaller text in badges on mobile */
     }
 
     section {
