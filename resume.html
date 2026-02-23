@@ -4,461 +4,298 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vinay K. Khare</title>
+  <title>Resume - Vinay K. Khare</title>
   <link rel="icon" type="image/png" href="./assets/pp.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd4CjV8w7T3qL8X0V1K6U0k5g1Z0Bq7k8eJz1Uu8d+q7f0t/nJ/LpS/QoP8Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <link href="./css/profile.css" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="./css/resume.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="container page text-center">
-    <!-- Objective -->
-    <div class="row">
-      <div class="col-md-3 pt-2">
-        <a href="index.html"><img src="./assets/pp.png" alt="Vinay K Khare" height="150"
-            style="border-radius: 50%" /></a>
-        <div class="py-2">
-          <h6 class="ubuntu-regular">Vinay Kumar Khare</h6>
-          <h6 class="ubuntu-bold">Technical Product Analyst</h6>
-        </div>
-      </div>
-      <div class="col-md-6 pt-md-4">
-        <ul style="list-style-type: none; padding-left: 0">
-          <li class="fs-5 ubuntu-bold">15+ Years Expert in Telecom OSS/BSS</li>
-          <li class="fs-6 ubuntu-regular">Strong foundation in designing and developing<br />Telecom Order Management
-            solutions.</li>
-          <li class="fs-6 ubuntu-bold">Also a Flutter Developer</li>
-          <li class="fs-6 ubuntu-regular">with a shipped product on the Google Play Store.</li>
-        </ul>
-        <!-- Social Links (LinkedIn & GitHub) -->
-        <div class="social-links d-flex justify-content-center gap-4 pt-3">
+  <div class="container text-end my-4 d-print-none">
+    <div class="btn-group shadow-sm rounded-pill overflow-hidden">
+      <button class="btn btn-primary px-4" id="printCvBtn">
+        <i class="fas fa-file-pdf me-2"></i> Print
+      </button>
 
-          <!-- <a href="./assets/VINAY KUMAR KHARE - Business Analyst Telecom Softwares.docx"
-            download="VINAY KUMAR KHARE - Business Analyst Telecom Softwares.docx"
-            class="btn btn-primary d-flex align-items-center">
-            <i class="fas fa-file-word fa-xl"></i>
-          </a>
+      <!-- <button class="btn btn-dark px-4" id="downloadDocxBtn">
+        <i class="fas fa-file-word me-2"></i> Save as Word
+      </button> -->
 
-          <a href="https://www.linkedin.com/in/vinay-kumar-khare-75b01623/" target="_blank"
-            class="text-black social-icon" aria-label="LinkedIn Profile">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="https://github.com/vinaykhare" target="_blank" class="text-black social-icon"
-            aria-label="GitHub Profile">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a href="mailto:vinaykhare@live.in" class="text-black social-icon" aria-label="Email Me">
-            <i class="fas fa-envelope fa-2x"></i>
-          </a> -->
+      <button class="btn btn-dark px-4" id="downloadTableDocxBtn">
+        <i class="fas fa-file-word me-2"></i> Save as Word
+      </button>
+    </div>
+  </div>
 
-          <button class="btn btn-primary rounded-pill px-3" id="printCvBtn" type="button">Print this CV</button>
+  <div class="resume-paper shadow-lg mx-auto mb-5" id="resume-content"
+    style="width: 210mm; background: white; font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.4;">
 
-        </div>
-      </div>
-      <div class="col-md-3 pt-2">
-        <img src="./assets/rgpv.png" alt="RGPV" height="150" style="border-radius: 50%" />
-        <div class="py-2">
-          <h6 class="ubuntu-regular">B.E. Honors</h6>
-          <h6 class="ubuntu-bold">Computer Science & Engineering</h6>
-        </div>
-      </div>
-      <!-- Header -->
-      <header class="px-1 text-bg-dark">
-        <div class="row">
-          <div class="col-md-12 ubuntu-bold">
-            Privileged to work with the Great Firms known for their Telecom
-            Products and Solution Integration
-          </div>
-        </div>
-      </header>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #1a2a3a; color: white;">
+      <tr>
+        <td width="25%" align="center" style="padding: 30px 10px 20px 20px;">
+          <img src="./assets/pp.png" alt="Vinay Khare" width="120"
+            style="border-radius: 50%; border: 3px solid #3d5a80;">
+        </td>
+        <td width="50%" style="padding: 30px 10px 20px 10px;">
+          <h1 style="margin: 0; font-size: 24pt; letter-spacing: 1px; text-transform: uppercase;">Vinay Kumar Khare</h1>
+          <h4 style="margin: 5px 0; color: #9db4c0; font-weight: 400;">Technical Product Analyst | Solution Architect
+          </h4>
+          <p style="margin: 10px 0 0 0; font-size: 10pt; line-height: 1.6;">
+            <strong>15+ Years Telecom OSS/BSS Expert</strong><br>
+            Specialist in Order Management Solutions & Flutter Development
+          </p>
+        </td>
+        <td width="25%" style="padding: 30px 20px 20px 10px; font-size: 9pt; vertical-align: bottom;">
+          <table width="100%" cellpadding="2">
+            <tr>
+              <td>📧 vinaykhare@live.in</td>
+            </tr>
+            <tr>
+              <td>📱 +91 9953997705</td>
+            </tr>
+            <tr>
+              <td>📍 Pune, Maharashtra, India</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-      <!-- Experience Summary -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="30%" valign="top" style="background-color: #f4f7f9; padding: 20px; border-right: 1px solid #e1e8ed;">
 
-      <div class="container">
-        <div class="row g-4 p-3 row-cols-1 row-cols-lg-3">
+          <h5
+            style="color: #1a2a3a; border-bottom: 2px solid #3d5a80; padding-bottom: 5px; text-transform: uppercase; font-size: 11pt;">
+            Education</h5>
+          <p style="font-size: 9pt; margin-bottom: 15px;">
+            <strong>B.E. Honors</strong><br>
+            Computer Science & Engineering<br>
+            <span style="color: #666;">RGPV University</span>
+          </p>
 
-          <div class="col-md-4">
-            <div class="p-1">
-
-              <!-- Row 1 : Logo + Title -->
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <img src="./assets/netcracker.png" alt="Netcracker Logo" class="company-logo">
-                </div>
-
-                <div class="col">
-                  <h2 class="company-name mb-1">Netcracker</h2>
-                  <div class="duration">JUL 2021 – PRESENT</div>
-                </div>
-              </div>
-
-              <!-- Row 2 : Full-width Description -->
-              <div class="row">
-                <div class="col-12">
-                  <p class="role-description mb-0">
-                    Working as Business Analyst Lead in Ethernet/IP to define requirements and design solutions using
-                    Netcracker TOMS module including OPF, RI, and SAF.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-1">
-
-              <!-- Row 1 : Logo + Title -->
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <img src="./assets/ericsson.png" alt="Ericsson Logo" class="company-logo">
-                </div>
-
-                <div class="col">
-                  <h2 class="company-name mb-1">Ericsson</h2>
-                  <div class="duration">DEC 2014 - JUN 2021</div>
-                </div>
-              </div>
-
-              <!-- Row 2 : Full-width Description -->
-              <div class="row">
-                <div class="col-12">
-                  <p class="role-description mb-0">
-                    Worked as Integration Engineer for Ericsson's Order & Catalog
-                    Management Solution. Involved in the end-to-end delivery of
-                    projects.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="p-1">
-              <!-- Row 1 : Logo + Title -->
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <img src="./assets/wipro.png" alt="Wipro Logo" class="company-logo">
-                </div>
-
-                <div class="col">
-                  <h2 class="company-name mb-1">Wipro</h2>
-                  <div class="duration">AUG 2010 – NOV 2014</div>
-                </div>
-              </div>
-
-              <!-- Row 2 : Full-width Description -->
-              <div class="row">
-                <div class="col-12">
-                  <p class="role-description mb-0">
-                    Held multiple telecom roles, including Oracle OSM Developer, Java ADM (BSIM), and O&M for a Prepaid
-                    Recharge Application.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Awards, Skills & Projects -->
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="row">
-            <!-- Recognitions -->
-            <div class="px-1 text-bg-dark col-md-12">
-              <div class="ubuntu-bold">Recognitions</div>
-            </div>
-            <div class="col-md-12 pb-2">
-              <ul class="list-group">
-                <li class="list-group-item text-center">
-                  Ericsson President Award & Excellence Award
-                </li>
-                <li class="list-group-item text-center">
-                  Netcracker Above & Beyound and Star Award
-                </li>
-                <li class="list-group-item text-center">
-                  Multiple Ericsson Ace, Ericsson Power Awards & Wipro Star
-                  Awards
-                </li>
-              </ul>
-            </div>
-            <!-- skills -->
-            <div class="px-1 text-bg-dark col-md-12">
-              <div class="ubuntu-bold">Skills & Abilities</div>
-            </div>
-            <!-- Design Tools -->
-            <div class="col-md-12">
-              <h6 class="text-start pt-2">Design Tools</h6>
-              <ul class="list-group">
-                <li class="list-group-item text-start">
-                  DRAW.IO
-                </li>
-                <li class="list-group-item text-start">
-                  ENTERPRISE ARCHITECT (V12)
-                </li>
-                <li class="list-group-item text-start">
-                  NETCRACKER OPF DESIGN TOOLS
-                </li>
-              </ul>
-            </div>
-            <!-- Telecom Products -->
-            <div class="col-md-12">
-              <h6 class="text-start pt-2">Telecom COTS Products</h6>
-              <ul class="list-group">
-                <li class="list-group-item text-start">
-                  NETCRACKER TOMS-OPF, RI, SAF
-                </li>
-                <li class="list-group-item text-start">
-                  ERICSSON ORDER CARE & CATALOG MANAGER
-                </li>
-                <li class="list-group-item text-start">
-                  NETCRACKER CLOUD OSS (NDO)
-                </li>
-              </ul>
-            </div>
-            <!-- Solutions & Frameworks -->
-            <div class="col-md-12">
-              <h6 class="text-start pt-2">Solutions & Frameworks</h6>
-              <ul class="list-group">
-                <li class="list-group-item text-start">
-                  METRO ETHERNET FRAMEWORK
-                </li>
-                <li class="list-group-item text-start">
-                  ERICSSON’S CBIO (DMP)
-                </li>
-                <li class="list-group-item text-start">
-                  TMFORUM SERVICE ORDER APIS. (641, 622)
-                </li>
-                <li class="list-group-item text-start">
-                  TMF BUSINESS PROCESS FRAMEWORK
-                </li>
-              </ul>
-            </div>
-            <!-- Programming Languages -->
-            <div class="col-md-12">
-              <h6 class="text-start pt-2">Also understands & use</h6>
-              <ul class="list-group">
-                <li class="list-group-item text-start">
-                  <h6>Programming Languages</h6>
-                  Dart (Flutter), Javascript, Java, SQL
-                </li>
-                <li class="list-group-item text-start">
-                  <h6>Other useful tools</h6>
-                  Git, SOAP UI, Postman (Newman).
-                </li>
-              </ul>
-            </div>
-            <!-- Programming Languages -->
-            <div class="col-md-12">
-              <h6 class="text-start pt-2">Courses & Learnings</h6>
-              <ul class="list-group">
-                <li class="list-group-item text-start">
-                  <h6>Udemy & Udacity</h6>
-                  <ul>
-                    <li class="text-start">Core Java made easy by Bharath Thippireddy.</li>
-                    <li class="text-start">Kotlin Bootcamp for Programmers by Aleks Haecky & Sean McQuillan</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <div class="mx-1 text-bg-dark col-md-12">
-              <div class="ubuntu-bold">Project Experience</div>
-            </div>
-
-            <div class="col-md-6">
-              <ol class="list-group">
-                <h6 class="text-start pt-2">Business & System Analysis</h6>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">Carrier Ethernet & IP Services</h6>
-                  <ul>
-                    <li>Business Analysis & Design for complex scenarios like Card & Device Replacement including Bulk
-                      Migration of Services</li>
-                    <li>MEF 12.2 is referred for Ethernet Services</li>
-                    <li>MEF 112 is referred for Service Model of IP/IP VPN</li>
-                    <li>MEF 61.1 is referred for Service Attributes</li>
-                    <li>EPL, EVPL, E-LAN, IP VPN, IP Access Topologies with On-Net and Offnet scenarios inlcuding the
-                      integration with Hosted Cloud Products (GCP, AWS etc.)</li>
-                    <li>Resource management for Cisco and Accedian Devices</li>
-                    <li>Worked on Netcracker TOMS Modules including:</li>
-                    <ul>
-                      <li>Order Processing Framework</li>
-                      <li>Resource Inventory</li>
-                      <li>Service Activation Framework</li>
-                      <li>Discovery & Reconciliation</li>
-                    </ul>
-                  </ul>
-                </li>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">Low Earth Orbit Satellite Services</h6>
-                  <ul>
-                    <li>Netcracker's Cloud OSS is used to provide the relevant configuration of Service Catalog and
-                      Service Orchestrator to implement the LEO Satellite specific catalog which include the Network
-                      Elements related to Terrestrial Network, Satellite Network, PAS (Network Access Point) and User
-                      Terminals.</li>
-
-                    <li>Worked on Netcracker Cloud OSS Module namely ESO for the System Analysis and configuration
-                      following TMF 640 & TMF 641 APIs and MEF 26.2, 55.1 and 7.4</li>
-                    <ul>
-                      <li>ESO stands for End to End Service Orchestrator</li>
-                      <li>This module receives Service Order request following TMS 641 and activates the services
-                        following TMF 640</li>
-                    </ul>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col-md-6">
-              <ol class="list-group">
-                <h6 class="text-start pt-2">Solution Architecture & Integration</h6>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">B2C Fixed Line Services</h6>
-                  <ul>
-                    <h6>Oracle OSM Developoer</h6>
-                    <li>Worked as Oracle OSM Developer for the Fulfillment of Wifi, Wibro (Portable wifi device), PSTN
-                      and Internet Services.</li>
-                    <li>I was involved in the development of Data Dictionary and Order Request Process module.</li>
-                    <h6 class="py-2">Ericsson Order Care & Catalog Manager</h6>
-                    <li>Worked as EOC ECM Developer for the Fulfillment of FTTH Triple Play Srevices (Internet, IPTV and
-                      VOIP).</li>
-                    <li>I was involved in the development of Service Activation module to integrate with third party
-                      system namely Incognito.</li>
-                  </ul>
-                </li>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">B2C Mobile Services</h6>
-                  <ul>
-                    <h6 class="py-2">Ericsson Order Care & Catalog Manager</h6>
-                    <li>Worked as EOC ECM Developer for the Fulfillment of Prepaid & Postpaid Mobile Services.</li>
-                    <li>Modelling of Product Offerings along with CFS and RFS specifications, and related decomposition
-                      rules.</li>
-                    <li>Integration for Billing, Charging, Resource Reservation and Service Activation.</li>
-                  </ul>
-                </li>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">SD-WAN Services</h6>
-                  <ul>
-                    <h6 class="py-2">Ericsson Order Care & Catalog Manager</h6>
-                    <li>Technical lead for the development of service order management solution using ericsson order
-                      care and catalog manager for sd-wan technologies in agile manner.</li>
-                    <li>Service Order Fulfillment for Devices from various SD-WAN Vendors like VeloCloud, Versa,
-                      Fortinet etc.</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col-md-12">
-              <ol class="list-group">
-                <h6 class="text-start pt-2">Application Development & Maintenance</h6>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">Spring Framework & Eclipse RCP</h6>
-                  <ul>
-                    <li>Product support for ericsson’s NMS tool (bsim) developed using java spring framework and eclipse
-                      rcp for gui development.</li>
-                  </ul>
-                </li>
-                <li class="list-group-item text-start">
-                  <h6 class="text-start pt-2">Core Java and Shell Scripting</h6>
-                  <ul>
-                    <li>Application development, operations and maintenance for a prepaid recharge application.
-                      Application used to manage recharge of retailers, distributors and circles.</li>
-                  </ul>
-                </li>
-              </ol>
-            </div>
-            <div class="col-md-12 py-3">
-              <header class="px-1 text-bg-dark">
-                <div class="row">
-                  <div class="col-md-12 ubuntu-light">Other Interests</div>
-                </div>
-              </header>
-              <div class="row">
-                <div class="col-md-4">
-                  <li class="list-group-item text-start">
-                    <ul>
-                      <li>Learn the stuff under Google Developer Program.</li>
-                    </ul>
-                  </li>
-                </div>
-                <div class="col-md-4">
-                  <li class="list-group-item text-start">
-                    <ul>
-                      <li>Develop Android Applications (using Flutter) and publish on Play Store.</li>
-                    </ul>
-                  </li>
-                </div>
-                <div class="col-md-4">
-                  <li class="list-group-item text-start">
-                    <ul>
-                      <li>Explore new Software Technlogies.</li>
-                      <li>Stock Market & Mutual Funds.</li>
-                    </ul>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Header -->
-      <header class="px-1 text-bg-dark">
-        <div class="row">
-          <div class="col-md-6 ubuntu-light">PHONE: +91 9953997705</div>
-          <div class="col-md-6 ubuntu-light">EMAIL: vinaykhare@live.in</div>
-        </div>
-      </header>
-
-      <!-- Footer -->
-      <!-- <footer class="p-2">
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
-          <p>© Vinay Kumar Khare</p>
-          <ul class="list-unstyled d-flex justify-content-center align-items-center">
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="https://github.com/vinaykhare"><svg xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="https://www.linkedin.com/in/vinay-kumar-khare-75b01623/"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                </svg></a>
-            </li>
+          <h5
+            style="color: #1a2a3a; border-bottom: 2px solid #3d5a80; padding-bottom: 5px; text-transform: uppercase; font-size: 11pt; margin-top: 25px;">
+            Recognitions</h5>
+          <ul style="padding-left: 15px; font-size: 8.5pt; margin-bottom: 15px;">
+            <li style="margin-bottom: 8px;"><strong>Ericsson:</strong> President Award & Excellence Award</li>
+            <li style="margin-bottom: 8px;"><strong>Netcracker:</strong> Star Award & Above and Beyond</li>
+            <li style="margin-bottom: 8px;">Multiple Ericsson Ace & Wipro Star Awards</li>
           </ul>
+
+          <h5
+            style="color: #1a2a3a; border-bottom: 2px solid #3d5a80; padding-bottom: 5px; text-transform: uppercase; font-size: 11pt; margin-top: 25px;">
+            Core Skills</h5>
+
+          <p style="font-size: 8.5pt; margin-bottom: 5px;"><strong>Telecom COTS:</strong></p>
+          <p style="font-size: 8.5pt; color: #555; margin-bottom: 10px;">Netcracker TOMS (OPF, RI, SAF), Ericsson Order
+            Care, Catalog Manager, Oracle OSM.</p>
+
+          <p style="font-size: 8.5pt; margin-bottom: 5px;"><strong>Frameworks:</strong></p>
+          <p style="font-size: 8.5pt; color: #555; margin-bottom: 10px;">MEF (12.2, 112, 61.1), TMF Open APIs (641, 622,
+            640), ETOM/SID.</p>
+
+          <p style="font-size: 8.5pt; margin-bottom: 5px;"><strong>Tech Stack:</strong></p>
+          <p style="font-size: 8.5pt; color: #555; margin-bottom: 10px;">Dart (Flutter), Java, Javascript, SQL, SOAP UI,
+            Postman, Git.</p>
+
+          <h5
+            style="color: #1a2a3a; border-bottom: 2px solid #3d5a80; padding-bottom: 5px; text-transform: uppercase; font-size: 11pt; margin-top: 25px;">
+            Interests</h5>
+          <p style="font-size: 8.5pt; color: #555;">Flutter App Development (Play Store), Google Developer Program,
+            Stock Market & Mutual Funds.</p>
+        </td>
+
+        <td width="70%" valign="top" style="padding: 20px;">
+
+          <h5
+            style="color: #3d5a80; border-bottom: 1px solid #dee2e6; padding-bottom: 5px; text-transform: uppercase; font-size: 12pt;">
+            Experience Summary</h5>
+          <table width="100%" cellpadding="5" cellspacing="0" style="margin-bottom: 15px;">
+            <tr>
+              <td valign="top" width="33%">
+                <strong style="font-size: 10pt;">Netcracker</strong><br>
+                <span style="font-size: 8pt; color: #777;">2021 – Present</span><br>
+                <span style="font-size: 8.5pt;">BA Lead (Ethernet/IP)</span>
+              </td>
+              <td valign="top" width="33%">
+                <strong style="font-size: 10pt;">Ericsson</strong><br>
+                <span style="font-size: 8pt; color: #777;">2014 – 2021</span><br>
+                <span style="font-size: 8.5pt;">Integration Engineer</span>
+              </td>
+              <td valign="top" width="33%">
+                <strong style="font-size: 10pt;">Wipro</strong><br>
+                <span style="font-size: 8pt; color: #777;">2010 – 2014</span><br>
+                <span style="font-size: 8.5pt;">Oracle OSM Developer</span>
+              </td>
+            </tr>
+          </table>
+
+          <h5
+            style="color: #3d5a80; border-bottom: 1px solid #dee2e6; padding-bottom: 5px; text-transform: uppercase; font-size: 12pt; margin-top: 20px;">
+            Key Project Expertise</h5>
+
+          <p style="margin: 10px 0 5px 0;"><strong>Carrier Ethernet & IP Services (Netcracker)</strong></p>
+          <ul style="padding-left: 18px; font-size: 9pt; margin-bottom: 10px;">
+            <li>Led Analysis for Card/Device replacement & bulk service migrations.</li>
+            <li>Referenced MEF 12.2, 112, and 61.1 for Ethernet/IP VPN topologies.</li>
+            <li>Integrated with Hosted Cloud (GCP/AWS) for On-Net/Off-Net scenarios.</li>
+          </ul>
+
+          <p style="margin: 10px 0 5px 0;"><strong>LEO Satellite Services Orchestration</strong></p>
+          <ul style="padding-left: 18px; font-size: 9pt; margin-bottom: 10px;">
+            <li>Configured <strong>End-to-End Service Orchestrator (ESO)</strong> for LEO Satellite catalogs.</li>
+            <li>Implemented TMF 640/641 APIs for Terrestrial & Satellite Network sync.</li>
+          </ul>
+
+          <p style="margin: 10px 0 5px 0;"><strong>SD-WAN Transformation (Ericsson)</strong></p>
+          <ul style="padding-left: 18px; font-size: 9pt; margin-bottom: 10px;">
+            <li>Technical Lead for Agile fulfillment of SD-WAN devices (VeloCloud, Versa, Fortinet).</li>
+            <li>Integrated EOC/ECM for complex multi-vendor service decomposition.</li>
+          </ul>
+
+          <p style="margin: 10px 0 5px 0;"><strong>Fixed & Mobile Fulfillment</strong></p>
+          <ul style="padding-left: 18px; font-size: 9pt; margin-bottom: 10px;">
+            <li><strong>FTTH Triple Play:</strong> Developed activation modules for Incognito systems.</li>
+            <li><strong>Oracle OSM:</strong> Developed Data Dictionaries for WiFi/PSTN fulfillment.</li>
+            <li><strong>Mobile:</strong> Modeled CFS/RFS for Prepaid & Postpaid billing integration.</li>
+          </ul>
+
+          <p style="margin: 10px 0 5px 0;"><strong>Application Development & ADM</strong></p>
+          <ul style="padding-left: 18px; font-size: 9pt; margin-bottom: 10px;">
+            <li>Maintained Ericsson NMS (bsim) using Java Spring & Eclipse RCP.</li>
+            <li>Developed Core Java/Shell tools for high-volume Prepaid Recharge apps.</li>
+          </ul>
+
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" cellpadding="10" style="background-color: #f8f9fa; border-top: 1px solid #dee2e6;">
+      <tr>
+        <td align="center" style="font-size: 8pt; color: #777;">
+          I hereby declare that the information provided is true to the best of my knowledge.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- <div class="container resume-paper shadow-lg mb-5">
+    <div class="row align-items-center mb-4 border-bottom pb-4">
+      <div class="col-md-2 text-center">
+        <img src="./assets/pp.png" alt="Vinay K Khare" class="profile-img shadow-sm" />
+      </div>
+      <div class="col-md-7 text-center text-md-start">
+        <h1 class="fw-bold text-primary mb-1">Vinay Kumar Khare</h1>
+        <h5 class="text-secondary fw-semibold mb-3">Technical Product Analyst | Solution Architect</h5>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start contact-info">
+          <span><i class="fas fa-phone text-primary me-1"></i> +91 9953997705</span>
+          <span><i class="fas fa-envelope text-primary me-1"></i> vinaykhare@live.in</span>
+          <span><i class="fab fa-linkedin text-primary me-1"></i> linkedin.com/in/vinaykhare</span>
         </div>
-      </footer> -->
+      </div>
+      <div class="col-md-3 text-center d-none d-md-block">
+        <img src="./assets/rgpv.png" alt="RGPV" class="edu-logo mb-2" />
+        <div class="small fw-bold">B.E. Honors</div>
+        <div class="small text-muted">Computer Science</div>
+      </div>
     </div>
 
-    <!-- Load Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+    <div class="row mb-4">
+      <div class="col-12 text-center bg-light p-3 rounded-3">
+        <h6 class="mb-0 fw-bold"><i class="fas fa-award text-warning me-2"></i> 15+ Years Expert in Telecom OSS/BSS |
+          Ericsson President Award Winner</h6>
+      </div>
+    </div>
 
-    <script src="./js/resume.js"></script>
+    <div class="row">
+      <div class="col-md-4 border-end">
+        <section class="mb-4">
+          <h5 class="section-title">Recognitions</h5>
+          <ul class="list-unstyled award-list">
+            <li><i class="fas fa-trophy text-warning"></i> <strong>President Award</strong> - Ericsson</li>
+            <li><i class="fas fa-star text-warning"></i> Netcracker Star Award ('22, '23)</li>
+            <li><i class="fas fa-medal text-primary"></i> Ace & Power Awards (Ericsson)</li>
+          </ul>
+        </section>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+        <section class="mb-4">
+          <h5 class="section-title">Telecom Expertise</h5>
+          <div class="skill-group">
+            <h6>COTS Products</h6>
+            <p>Netcracker TOMS (OPF, RI, SAF), Ericsson Order Care & Catalog, Netcracker Cloud OSS</p>
+          </div>
+          <div class="skill-group">
+            <h6>Frameworks</h6>
+            <p>Metro Ethernet (MEF), TMForum APIs (641, 622), TMF SID/eTOM</p>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h5 class="section-title">Development</h5>
+          <p class="small"><strong>Languages:</strong> Java, Dart (Flutter), SQL, JS</p>
+          <p class="small"><strong>Tools:</strong> Git, Postman, SOAP UI, Enterprise Architect</p>
+        </section>
+      </div>
+
+      <div class="col-md-8">
+        <h5 class="section-title">Professional Experience</h5>
+
+        <div class="exp-item mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="fw-bold mb-0">Netcracker Technology</h6>
+            <span class="badge bg-light text-dark border">2021 – Present</span>
+          </div>
+          <div class="text-primary small fw-bold mb-2">Business Analyst Lead</div>
+          <ul class="small">
+            <li>Designing LEO Satellite & Ethernet/IP solutions using TOMS (OPF, RI, SAF).</li>
+            <li>Implementing TMF-aligned API integrations for End-to-End Orchestration (ESO).</li>
+          </ul>
+        </div>
+
+        <div class="exp-item mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="fw-bold mb-0">Ericsson</h6>
+            <span class="badge bg-light text-dark border">2014 – 2021</span>
+          </div>
+          <div class="text-primary small fw-bold mb-2">Integration Engineer / Technical Lead</div>
+          <ul class="small">
+            <li>Lead solution architect for SD-WAN Order Management across multi-vendor devices.</li>
+            <li>Delivered complex B2C Triple Play and Mobile fulfillment transformations.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="fw-bold mb-0">Wipro Limited</h6>
+            <span class="badge bg-light text-dark border">2010 – 2014</span>
+          </div>
+          <div class="text-primary small fw-bold mb-2">Oracle OSM Developer</div>
+          <ul class="small">
+            <li>Developed fulfillment workflows for Fixed Line and Mobile services.</li>
+          </ul>
+        </div>
+
+        <h5 class="section-title mt-4">Key Project Impact</h5>
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="p-2 border rounded-2 small bg-light">
+              <strong>LEO Satellite:</strong> Configured ESO for Terrestrial & Space network orchestration.
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 border rounded-2 small bg-light">
+              <strong>SD-WAN:</strong> Integrated VeloCloud & Fortinet for agile service delivery.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <script src="https://unpkg.com/html-to-docx@1.2.4/dist/html-to-docx.umd.js"></script>
+  <script src="./js/resume.js"></script>
 </body>
 
 </html>

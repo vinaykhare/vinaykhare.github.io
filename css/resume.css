@@ -1,0 +1,93 @@
+:root {
+    --primary-blue: #0056b3;
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+}
+
+.resume-paper {
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.edu-logo {
+    height: 60px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.award-list {
+    font-size: 0.9rem;
+}
+
+.award-list li {
+    margin-bottom: 8px;
+}
+
+.skill-group h6 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.skill-group p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.contact-info {
+    font-size: 0.9rem;
+}
+
+/* --- PRINT LOGIC --- */
+@media print {
+    body {
+        background: white !important;
+    }
+    .resume-paper {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+    }
+    .d-print-none {
+        display: none !important;
+    }
+    /* Set PDF Margins */
+    @page {
+        margin: 1.5cm;
+    }
+    .text-primary {
+        color: var(--primary-blue) !important;
+        -webkit-print-color-adjust: exact;
+    }
+    .bg-light {
+        background-color: #f8f9fa !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
