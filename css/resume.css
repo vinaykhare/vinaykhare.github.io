@@ -91,3 +91,60 @@ body {
         -webkit-print-color-adjust: exact;
     }
 }
+
+/* 1. Reset the fixed width for screens smaller than the A4 size */
+@media screen and (max-width: 210mm) {
+    .resume-paper {
+        width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
+}
+
+/* 2. Force the Table Cells to stack on top of each other on Mobile */
+@media screen and (max-width: 600px) {
+    /* Target the main tables */
+    #resume-content table, 
+    #resume-content tbody, 
+    #resume-content tr, 
+    #resume-content td {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Adjust the header image alignment */
+    #resume-content td[align="center"] {
+        text-align: center !important;
+        padding: 20px 0 10px 0 !important;
+    }
+
+    /* Fix the Sidebar (Education/Skills) */
+    #resume-content td[width="30%"] {
+        border-right: none !important;
+        border-bottom: 2px solid #e1e8ed !important;
+        background-color: #f8f9fa !important;
+    }
+
+    /* Fix the Experience Summary 3-column table */
+    #resume-content table table td {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 15px;
+        border-bottom: 1px dashed #eee;
+    }
+
+    /* Make text more readable on small screens */
+    h1 {
+        font-size: 20pt !important;
+        text-align: center;
+    }
+    h4 {
+        text-align: center;
+    }
+    
+    /* Center the contact info table on mobile */
+    #resume-content td[width="25%"] table {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -16,33 +16,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function exportToWord() {
+async function exportToWord() {
     const resumeElement = document.getElementById('resume-content');
-    
-    // 1. Create a clone so we don't mess up the actual UI
     const clone = resumeElement.cloneNode(true);
-    
-    // 2. Find the image in the clone
     const imgElement = clone.querySelector('img');
-    
-    // 3. Helper to convert image to Base64
-    function getBase64Image(img) {
-        const canvas = document.createElement("canvas");
-        canvas.width = img.naturalWidth;
-        canvas.height = img.naturalHeight;
-        const ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0);
-        return canvas.toDataURL("image/png");
+
+    // Helper to ensure image is loaded and converted correctly
+    async function getBase64Image(img) {
+        return new Promise((resolve) => {
+            // Create a new image object to avoid modifying the UI version
+            const tempImg = new Image();
+            tempImg.crossOrigin = "anonymous"; // Helps with local security blocks
+            tempImg.onload = function() {
+                const canvas = document.createElement("canvas");
+                canvas.width = tempImg.naturalWidth;
+                canvas.height = tempImg.naturalHeight;
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(tempImg, 0, 0);
+                resolve(canvas.toDataURL("image/png"));
+            };
+            tempImg.onerror = () => resolve(null); // Fallback if image fails
+            tempImg.src = img.src;
+        });
     }
 
-    // 4. Update the src to Base64 if the image is loaded
-    if (imgElement && imgElement.complete) {
-        const base64 = getBase64Image(imgElement);
-        imgElement.src = base64;
+    if (imgElement) {
+        const base64 = await getBase64Image(imgElement);
+        
+        if (base64) {
+            const imageHtml = `
+                <table align="left" width="120" style="width:1.25in; border-collapse:collapse; margin-right: 20px;">
+                    <tr>
+                        <td width="120" style="width:1.25in; padding:0;">
+                            <img src="${base64}" width="120" height="120" style="width:1.25in; height:1.25in; display:block;">
+                        </td>
+                    </tr>
+                </table>`;
+            imgElement.outerHTML = imageHtml;
+        }
     }
 
     const content = clone.innerHTML;
-
     const header = `
         <html xmlns:o='urn:schemas-microsoft-com:office:office' 
               xmlns:w='urn:schemas-microsoft-com:office:word' 
@@ -50,29 +64,23 @@ function exportToWord() {
         <head>
             <meta charset='utf-8'>
             <style>
-                @page { size: 21cm 29.7cm; margin: 0cm; }
-                body { font-family: 'Arial', sans-serif; }
+                @page { size: 21cm 29.7cm; margin: 0.75in; }
+                body { font-family: 'Arial', sans-serif; font-size: 10.5pt; }
+                img { width: 1.25in !important; height: 1.25in !important; }
             </style>
         </head>
         <body>`;
-    const footer = "</body></html>";
-
-    const sourceHTML = header + content + footer;
-
-    const blob = new Blob(['\ufeff', sourceHTML], {
-        type: 'application/msword'
-    });
-
+    
+    const sourceHTML = header + content + "</body></html>";
+    const blob = new Blob(['\ufeff', sourceHTML], { type: 'application/msword' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
     link.download = 'Vinay_Khare_Resume.doc';
-    
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
-
 /*
 async function generateBeautifulDocx() {
     // 1. Safety Check: Is the library even there?
