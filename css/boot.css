@@ -127,6 +127,12 @@ section {
     transform: translateY(-10px);
 }
 
+.hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
+.hover-opacity { transition: opacity 0.2s; }
+.hover-opacity:hover { opacity: 0.7; }
+.app-card { background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%); border: 1px solid #2c3e50; }
+
 /* Mobile Adjustments */
 @media (max-width: 991px) {
     

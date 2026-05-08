@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Workout Minds</title>
+     <link rel="icon" type="image/png" href="../assets/workoutminds.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta-info {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+       
+        .hero { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 100px 0; }
+        .feature-icon { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+        .btn-custom { border-radius: 50px; padding: 12px 30px; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="/workoutminds/"><i class="fas fa-arrow-left me-2"></i> Vinay Khare</a>
+        </div>
+<div class="container">
+    <h1>Privacy Policy for Workout Minds</h1>
+    
+    <p class="meta-info"><strong>Effective Date:</strong> 8th May, 2026</p>
+
+    <p>Vinay Kumar Khare ("we," "us," or "our") operates the Workout Minds mobile application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+
+    <p>By using the Service, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <h2>1. Information We Collect and How We Use It</h2>
+    <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+
+    <h3>A. Personal Identification & Account Data</h3>
+    <ul>
+        <li><strong>Google Sign-In:</strong> To use cloud sync and AI features, we require you to sign in using your Google Account. We receive your email address and basic profile information to authenticate you via Firebase Authentication.</li>
+        <li><strong>Purchases & Credits:</strong> We store your available "AI Credits" and subscription status (e.g., Power User/BYOK mode) securely on Google Cloud Firestore tied to your authenticated ID.</li>
+    </ul>
+
+    <h3>B. Health and Fitness Metrics</h3>
+    <p>To provide personalized workout plans, the app collects metrics inputted by you, including:</p>
+    <ul>
+        <li>Height, Weight, and calculated BMI.</li>
+        <li>Gender and Primary Fitness Goals.</li>
+        <li>Strength baselines (e.g., max pushups, pull-ups, squats).</li>
+        <li>Detailed workout logs, rest timers, and exercise feedback (e.g., "Too Hard," "Too Easy").</li>
+    </ul>
+    <p><em>Note: This data is stored locally on your device's SQLite database by default.</em></p>
+
+    <h3>C. Media and Files</h3>
+    <p>If you choose to add custom images to your exercises, the Service may request access to your device's photo gallery. These images are stored locally on your device and are not uploaded to our servers.</p>
+
+    <h2>2. Third-Party Services and Data Sharing</h2>
+    <p>Workout Minds utilizes specific third-party services that are essential to its core functionality. We do not sell your personal data to advertisers.</p>
+    <ul>
+        <li><strong>Google Generative AI (Gemini):</strong> To generate and optimize your custom workout plans, the Service sends your fitness profile (goals, height, weight, strength baseline) and recent workout feedback to Google's Generative AI API. <em>Your name and email address are not sent to the AI.</em></li>
+        <li><strong>Google Drive API (Cloud Backup):</strong> If you enable Cloud Backup, the Service requests permission to access a hidden, app-specific folder (<code>appDataFolder</code>) inside your personal Google Drive. Your local database and profile settings are uploaded here. <strong>We (the developers) do not have access to read, view, or modify the contents of your Google Drive.</strong></li>
+        <li><strong>Google Firebase:</strong> Used for secure user authentication and tracking in-app purchases/AI credits.</li>
+        <li><strong>Google Play Billing:</strong> Used to securely process payments for AI Credits and Subscriptions. We do not collect or store your credit card details.</li>
+    </ul>
+
+    <h2>3. Data Security and Storage</h2>
+    <p>The security of your data is important to us.</p>
+    <ul>
+        <li>Your primary workout data lives locally on your device.</li>
+        <li>Cloud backups are encrypted in transit and stored securely within your own Google Drive account.</li>
+        <li>We use industry-standard Firebase security rules to protect your credit and subscription data.</li>
+    </ul>
+    <p>However, remember that no method of transmission over the Internet or electronic storage is 100% secure.</p>
+
+    <h2>4. Your Rights and Data Deletion</h2>
+    <p>You have full control over your data within Workout Minds. At any time, you can navigate to the <strong>Settings -> Danger Zone</strong> within the app to:</p>
+    <ol>
+        <li><strong>Delete Cloud Backup:</strong> Permanently erase your synced workout database and profile from your Google Drive.</li>
+        <li><strong>Erase All Data:</strong> Permanently delete all local SQLite databases, custom routines, and settings from your physical device.</li>
+        <li><strong>Log Out:</strong> Disconnect your Google Account from the app.</li>
+    </ol>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Our Service does not address anyone under the age of 18 ("Children"). We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us.</p>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or wish to request the deletion of your account data from our Firebase servers, please contact us at:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:vinaykhare123@gmail.com">vinaykhare123@gmail.com</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
